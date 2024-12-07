@@ -14,5 +14,5 @@ body:
 
         topic: topic-name
         reponame3
-      validation:
-        required: true
+    validations:
+      required: true
