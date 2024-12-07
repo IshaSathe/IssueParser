@@ -13,7 +13,7 @@ jobs:
         id: get_issue_body
         shell: bash
         run: |
-          topics_and_repos=$(echo "${{ (github.event.issue.body) }}" | sed '1,2d')
+          topics_and_repos=$(echo "${{ (github.event.issue.body) }}" | sed '1,2d' | tr -d '\r')
           echo "topics_and_repos=${topics_and_repos}" >> "$GITHUB_OUTPUT"
       - name: Print Issue Body
         id: print_issue_body
