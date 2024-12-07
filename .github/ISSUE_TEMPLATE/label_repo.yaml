@@ -1,0 +1,18 @@
+name: repo labeling
+description: labels repos
+labels: ["label-repos"]
+body:
+  - type: textarea
+    id: topics_repos
+    attributes:
+      label: Topics and Repos
+      description: Enter topics and repos
+      placeholder: |
+        topic: topic-name
+        reponame1
+        reponame2
+
+        topic: topic-name
+        reponame3
+      validations:
+        required: true
