@@ -11,5 +11,5 @@ jobs:
       - name: Debug Labels
         shell: bash
         run: |
-          echo "Labels: ${{ toJson(github.event.issue.labels.) }}"
+          echo "Labels: ${{ toJson(github.event.issue.labels) }}"
     
