@@ -6,7 +6,7 @@ on:
 
 jobs:
   repo_labeling:
-    if: contains(github.events.issue.labels.*.name, 'label-repos')
+    if: contains(github.event.issue.labels.*.name, 'label-repos')
     runs-on: [ubuntu-latest]
     steps:
       - name: Debug Labels
