@@ -6,11 +6,10 @@ on:
 
 jobs:
   repo_labeling:
-    if: contains(github.events.issue.labels.*.name, 'label-repos')
     runs-on: [ubuntu-latest]
     steps:
-      - name: Print
+      - name: Debug Labels
         shell: bash
         run: |
-          echo "correct label"
+          echo "Labels: ${{ toJson(github.event.issue.labels.) }}"
     
